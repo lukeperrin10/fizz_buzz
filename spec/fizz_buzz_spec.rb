@@ -1,9 +1,7 @@
-require_relative('./lib/fizz_buzz')
+require_relative('../lib/fizz_buzz')
 
 describe FizzBuzz do
-    subject = {FizzBuzz.new}
-    
-
+    subject {FizzBuzz.new}
 
     it 'is expected to return an number if no conditions met' do
         expect(subject.check(1)).to eq 1
@@ -22,6 +20,3 @@ describe FizzBuzz do
         expect(subject.check(15)).to eq 'FizzBuzz'
     end
 
-
-
-end
